@@ -13,7 +13,6 @@ import ListItemSecondaryAction  from '@material-ui/core/ListItemSecondaryAction'
 function Todo({ id, task, completed }) {
   const [isEditing, toggleIsEditing] = useToggleState(false);
   const dispatch = useContext(DispatchTodosContext);
-  console.log('Render component', id);
 
   return (
     <ListItem style={{ height: "64px" }}>
